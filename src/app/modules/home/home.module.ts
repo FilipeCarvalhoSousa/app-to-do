@@ -1,6 +1,11 @@
+import { MenuComponent } from './menu.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 // Components
 import { HeaderComponent } from './components/header/header.component';
@@ -17,11 +22,16 @@ import { HomeComponent } from './pages/home/home.component';
     TodoButtonDeleteAllComponent,
     TodoInputAddItensComponent,
     TodoListComponent,
-    HomeComponent
+    HomeComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    MatTabsModule,
+        MatToolbarModule,
+        MatMenuModule,
+        MatSidenavModule
   ]
 })
 export class HomeModule { }
