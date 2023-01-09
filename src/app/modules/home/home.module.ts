@@ -15,6 +15,7 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 // Pages
 import { HomeComponent } from './pages/home/home.component';
+import { CalculadoraComponent } from './pages/calculadora/calculadora.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomeComponent } from './pages/home/home.component';
     TodoInputAddItensComponent,
     TodoListComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    CalculadoraComponent
   ],
   imports: [
     CommonModule,
